@@ -1,12 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Todas las páginas se prerenderizan; no requieren APIs de caché experimentales.
   turbopack: {
     rules: {
       "*.css": {
