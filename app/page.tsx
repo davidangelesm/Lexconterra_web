@@ -23,9 +23,9 @@ export default function Home() {
             Soluciones jurídicas con <em>enfoque estratégico</em>
           </h1>
           <p>
-            Asesoría legal especializada para personas y empresas, orientada a
-            la prevención de contingencias, solución de conflictos y protección
-            de sus intereses.
+            Brindamos asesoría legal y empresarial a personas y empresas, con un
+            enfoque preventivo y estratégico, orientado a proteger sus
+            intereses, anticipar contingencias y resolver controversias.
           </p>
           <div className="actions">
             <Button href={whatsappUrl()}>Solicitar consulta</Button>
@@ -34,7 +34,7 @@ export default function Home() {
             </TextLink>
           </div>
           <div className="hero-note">
-            <span className="gold-line" />A su lado, en cada decisión.
+            <span className="gold-line" />A tu lado, en cada decisión.
           </div>
         </div>
         <div className="hero-visual">
@@ -68,13 +68,13 @@ export default function Home() {
         </div>
         <div>
           <p className="large-copy">
-            Cada decisión merece una perspectiva jurídica clara.
+            Distintas especialidades. Una misma visión.
           </p>
           <p>
-            Reunimos especialización jurídica y visión empresarial para
-            acompañar a personas y organizaciones. Trabajamos con rigor, ética y
-            atención personalizada para comprender sus necesidades y orientar
-            cada paso.
+            Somos un equipo de profesionales del ámbito juridico y contable que integra conocimientos
+            y experiencia para brindar una asesoría multidisciplinaria. Nuetra fortaleza radica en la
+            complementariedad de nuestras especialidades, lo que nos permite abordar cada asunto con una
+            perspectiva integral y ofrecer soluciones adaptadas a las necesidades de personas y empresas.
           </p>
           <TextLink href="/nosotros">Conocer nuestro estudio</TextLink>
         </div>
@@ -105,19 +105,17 @@ export default function Home() {
         <div>
           <p className="eyebrow">NUESTRO EQUIPO</p>
           <h2>
-            Distintas especialidades.
+            La experiencia detras
             <br />
-            Un mismo compromiso.
+            de cada asesoría.
           </h2>
           <p>
-            Un equipo multidisciplinario que integra el análisis jurídico y la
-            asesoría empresarial, con atención cercana a las necesidades de cada
-            cliente.
+            Nuestro equipo reúne profesionales con sólidas trayectorias y especialidades complementarias, quienes aportan sus conocimientos y experiencia para brindar una atención jurídica y contable rigurosa, responsable y cercana a las necesidades de cada cliente.
           </p>
           <TextLink href="/equipo">Conocer nuestro equipo</TextLink>
         </div>
         <div className="team-statement">
-          <span>LEXCONTERRA</span>
+          <span>LEXCONTERRA GROUP</span>
           <blockquote>
             El rigor en el análisis.
             <br />
@@ -134,13 +132,12 @@ export default function Home() {
         <div>
           <p className="eyebrow">NUESTRAS INSTALACIONES</p>
           <h2>
-            Conversemos en un
+            Un entorno profesional
             <br />
-            entorno profesional.
+            desde su llegada.
           </h2>
           <p>
-            Conozca nuestra sede en Santa Beatriz, Lima, y los ambientes
-            destinados a la atención de consultas y reuniones profesionales.
+            Ubicados en el edificio Cedral, en Santa Beatriz, Lima, ofrecemos un entorno corporativo con recepción y ambientes privados especialmente acondicionados para la atención de nuestros clientes y el desarrollo de reuniones profesionales.
           </p>
           <TextLink href="/instalaciones">Ver nuestras instalaciones</TextLink>
         </div>

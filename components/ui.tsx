@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { officeImage, getLogo } from "@/lib/images";
 import { practices, type Professional, whatsappUrl } from "@/data/site";
+import { TeamBio } from "./TeamBio";
 export function Brand() {
   const logo = getLogo();
   return logo ? (
@@ -159,8 +160,8 @@ export function PracticeCard({
         href={
           detailed
             ? whatsappUrl(
-                `Buenos días, quisiera solicitar información sobre ${practice.title} en LEXCONTERRA GROUP.`,
-              )
+              `Buenos días, quisiera solicitar información sobre ${practice.title} en LEXCONTERRA GROUP.`,
+            )
             : "/areas-de-practica"
         }
       >
@@ -179,13 +180,16 @@ export function TeamCard({ person }: { person: Professional }) {
             alt={person.name}
             fill
             sizes="(max-width: 760px) 100vw, 33vw"
+            style={{ objectFit: "cover", objectPosition: "top center" }}
           />
         ) : (
-          <span aria-label={`Iniciales de ${person.name}`}>
-            {person.initials}
-          </span>
+          <>
+            <span aria-label={`Iniciales de ${person.name}`}>
+              {person.initials}
+            </span>
+            <small>LEXCONTERRA GROUP</small>
+          </>
         )}
-        <small>LEXCONTERRA GROUP</small>
       </div>
       <div className="team-info">
         <p className="eyebrow">{person.role}</p>
@@ -195,7 +199,7 @@ export function TeamCard({ person }: { person: Professional }) {
             <li key={a}>{a}</li>
           ))}
         </ul>
-        {person.bio && <p>{person.bio}</p>}
+        {person.bio && <TeamBio name={person.name} bio={person.bio} />}
         {person.registration && <p>Colegiatura: {person.registration}</p>}
       </div>
     </article>
@@ -208,12 +212,12 @@ export function CallToAction() {
         <div>
           <p className="eyebrow">CONVERSEMOS</p>
           <h2>
-            Estamos preparados para
+            Tu consulta merece
             <br />
-            escuchar su consulta
+            atención profesional.
           </h2>
         </div>
-        <Button href="/contacto">Contactar con LEXCONTERRA</Button>
+        <Button href="/contacto">Solicitar una consulta</Button>
       </div>
     </section>
   );

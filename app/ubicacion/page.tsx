@@ -53,7 +53,10 @@ export default function Ubicacion() {
           />
         </div>
         <div className="location-photo">
-          <OfficeImage number={4} />
+          <OfficeImage
+            src="/images/Entrada corporativa moderna en Cedral.png"
+            alt="Entrada corporativa moderna de LEXCONTERRA GROUP en Santa Beatriz, Lima"
+          />
           <TextLink href={mapsUrl}>Abrir ubicación en Google Maps</TextLink>
         </div>
       </section>
