@@ -1,4 +1,5 @@
 import { PageHero, OfficeImage, Button } from "@/components/ui";
+import { facilities } from "@/data/site";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Nuestras Instalaciones | LEXCONTERRA GROUP",
@@ -26,8 +27,8 @@ export default function Instalaciones() {
           </p>
         </div>
         <div className="gallery">
-          {[1, 2, 3, 4].map((n) => (
-            <OfficeImage key={n} number={n} />
+          {facilities.map((f) => (
+            <OfficeImage key={f.title} src={f.src} alt={f.alt} />
           ))}
         </div>
         <div className="section-heading">

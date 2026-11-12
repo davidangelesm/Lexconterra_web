@@ -202,3 +202,25 @@ export const spaces = [
     terms: null,
   },
 ];
+export const facilities = [
+  {
+    title: "Oficina principal",
+    src: "/images/Foto_5_Oficina_Principal.png",
+    alt: "Oficina principal de LEXCONTERRA GROUP en Lima",
+  },
+  {
+    title: "Oficinas privadas",
+    src: "/images/Foto_oficinas_privadas.png",
+    alt: "Oficinas privadas de LEXCONTERRA GROUP en Lima",
+  },
+  {
+    title: "Salas de reuniones",
+    src: "/images/Foto_sala_de_reuniones.png",
+    alt: "Salas de reuniones de LEXCONTERRA GROUP en Lima",
+  },
+  {
+    title: "Módulos de trabajo",
+    src: "/images/Foto_Modulos_trabajo.png",
+    alt: "Módulos de trabajo de LEXCONTERRA GROUP en Lima",
+  },
+];

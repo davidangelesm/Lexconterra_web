@@ -16,5 +16,15 @@ export function officeImage(number: number) {
     pending: true,
   };
 }
-export const hasLogo = () =>
-  existsSync(join(process.cwd(), "public/images/logo-lexconterra.jpeg"));
+export function getLogo() {
+  const extensions = [".png", ".jpeg", ".jpg", ".webp", ".svg"];
+  for (const ext of extensions) {
+    const file = `/images/logo-lexconterra${ext}`;
+    if (existsSync(join(process.cwd(), "public", file))) {
+      return file;
+    }
+  }
+  return null;
+}
+
+export const hasLogo = () => getLogo() !== null;

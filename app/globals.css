@@ -259,6 +259,10 @@ button {
   background: none;
   border: 0;
   color: var(--green);
+  padding: 10px;
+  margin-right: -10px;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 .text-link {
   display: inline-flex;
@@ -1133,6 +1137,10 @@ button {
   }
   .brand-text {
     font-size: 21px;
+  }
+  .original-logo {
+    width: 170px;
+    height: 55px;
   }
   .home-hero {
     grid-template-columns: 1fr;

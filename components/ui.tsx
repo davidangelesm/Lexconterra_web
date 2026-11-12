@@ -12,12 +12,13 @@ import {
   BookOpen,
   MessageCircle,
 } from "lucide-react";
-import { officeImage, hasLogo } from "@/lib/images";
+import { officeImage, getLogo } from "@/lib/images";
 import { practices, type Professional, whatsappUrl } from "@/data/site";
 export function Brand() {
-  return hasLogo() ? (
+  const logo = getLogo();
+  return logo ? (
     <Image
-      src="/images/logo-lexconterra.jpeg"
+      src={logo}
       alt="LEXCONTERRA GROUP"
       width={220}
       height={78}
