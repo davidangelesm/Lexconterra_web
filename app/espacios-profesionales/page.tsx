@@ -33,7 +33,10 @@ export default function Espacios() {
         <div className="spaces-grid">
           {spaces.map((s) => (
             <article key={s.title}>
-              <OfficeImage number={s.office} />
+              <OfficeImage
+                src={s.image}
+                alt={`${s.title} de LEXCONTERRA GROUP`}
+              />
               <div className="space-content">
                 <h3>{s.title}</h3>
                 <p>{s.description}</p>

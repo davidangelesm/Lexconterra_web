@@ -86,23 +86,29 @@ export function PageHero({
 }
 export function OfficeImage({
   number,
+  src,
+  alt,
   priority = false,
   className = "",
 }: {
-  number: number;
+  number?: number;
+  src?: string;
+  alt?: string;
   priority?: boolean;
   className?: string;
 }) {
-  const image = officeImage(number);
+  const image = src ? { src, pending: false } : officeImage(number ?? 0);
+  const imageAlt =
+    alt ??
+    (image.pending
+      ? `Fotografía ${number} de la oficina pendiente de incorporar`
+      : `Instalaciones de LEXCONTERRA GROUP en Lima, fotografía ${number}`);
+
   return (
     <figure className={`office-image ${className}`}>
       <Image
         src={image.src}
-        alt={
-          image.pending
-            ? `Fotografía ${number} de la oficina pendiente de incorporar`
-            : `Instalaciones de LEXCONTERRA GROUP en Lima, fotografía ${number}`
-        }
+        alt={imageAlt}
         fill
         sizes="(max-width: 760px) 100vw, 60vw"
         priority={priority}

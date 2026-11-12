@@ -53,15 +53,13 @@ try {
       await img.evaluate((el) => el.decode());
     }
     await page.evaluate(() => window.scrollTo(0, 0));
-    const images = await page
-      .locator("img")
-      .evaluateAll((imgs) =>
-        imgs.map((img) => ({
-          src: img.src,
-          complete: img.complete,
-          width: img.naturalWidth,
-        })),
-      );
+    const images = await page.locator("img").evaluateAll((imgs) =>
+      imgs.map((img) => ({
+        src: img.src,
+        complete: img.complete,
+        width: img.naturalWidth,
+      })),
+    );
     for (const img of images) assert.ok(img.complete && img.width > 0, img.src);
     for (const href of await page
       .locator("a[href]")

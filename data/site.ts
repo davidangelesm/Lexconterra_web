@@ -176,6 +176,7 @@ export const spaces = [
     description:
       "Un espacio para desarrollar sus actividades profesionales. Consulte las opciones y condiciones disponibles.",
     office: 1,
+    image: "/images/Foto_oficinas_privadas.png",
     rates: null,
     availability: null,
     terms: null,
@@ -185,6 +186,7 @@ export const spaces = [
     description:
       "Ambientes para encuentros profesionales y reuniones de trabajo. Consulte la disponibilidad para su actividad.",
     office: 2,
+    image: "/images/Foto_sala_de_reuniones.png",
     rates: null,
     availability: null,
     terms: null,
@@ -194,6 +196,7 @@ export const spaces = [
     description:
       "Espacios para sus actividades de trabajo. Contáctenos para conocer las alternativas y condiciones de uso.",
     office: 3,
+    image: "/images/Foto_Modulos_trabajo.png",
     rates: null,
     availability: null,
     terms: null,

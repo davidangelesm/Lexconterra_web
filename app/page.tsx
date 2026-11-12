@@ -38,7 +38,11 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual">
-          <OfficeImage number={5} priority />
+          <OfficeImage
+            src="/images/Foto_5_Oficina_Principal.png"
+            alt="Oficina principal de LEXCONTERRA GROUP en Lima"
+            priority
+          />
           <div className="hero-caption">
             <span>NUESTRA SEDE</span>
             <p>Un espacio para construir confianza.</p>
@@ -123,7 +127,10 @@ export default function Home() {
         </div>
       </section>
       <section className="office-teaser container">
-        <OfficeImage number={1} />
+        <OfficeImage
+          src="/images/recepcion-moderna-cedral.png"
+          alt="Recepción moderna con rótulo CEDRAL en LEXCONTERRA GROUP"
+        />
         <div>
           <p className="eyebrow">NUESTRAS INSTALACIONES</p>
           <h2>
