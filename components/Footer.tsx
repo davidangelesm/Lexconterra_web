@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MapPin, Phone, MessageCircle, Mail } from "lucide-react";
 import { Brand } from "./ui";
 import { navigation, practices, site, whatsappUrl } from "@/data/site";
 export function Footer() {
@@ -10,15 +11,14 @@ export function Footer() {
             <Brand />
           </Link>
           <p>
-            Asesoría legal, empresarial y contable. Compromiso profesional con
-            la protección de sus intereses.
+            Asesoría especializada para personas y empresas, con enfoque estratégico y compromiso profesional.
           </p>
           <span className="footer-location">LIMA, PERÚ</span>
         </div>
         <div>
           <h2>El estudio</h2>
-          {navigation
-            .filter((_, i) => ![0, 2].includes(i))
+          {[1, 4, 5, 3, 6, 7]
+            .map((i) => navigation[i])
             .map(([label, href]) => (
               <Link key={href} href={href}>
                 {label}
@@ -26,20 +26,30 @@ export function Footer() {
             ))}
         </div>
         <div>
-          <h2>Áreas de práctica</h2>
+          <h2>Especialidades</h2>
           {practices.map((p) => (
             <Link key={p.slug} href="/areas-de-practica">
               {p.title}
             </Link>
           ))}
         </div>
-        <div>
+        <div className="footer-contact">
           <h2>Contacto</h2>
-          <p>{site.address}</p>
-          <a href="tel:+5119005261">{site.phone}</a>
-          <a href={whatsappUrl()}>WhatsApp: {site.whatsapp}</a>
-          <a className="email" href={`mailto:${site.email}`}>
-            {site.email}
+          <p className="footer-contact-item">
+            <MapPin size={16} strokeWidth={1.6} aria-hidden="true" />
+            <span>{site.address}</span>
+          </p>
+          <a className="footer-contact-item" href="tel:+5119005261">
+            <Phone size={16} strokeWidth={1.6} aria-hidden="true" />
+            <span>{site.phone}</span>
+          </a>
+          <a className="footer-contact-item" href={whatsappUrl()}>
+            <MessageCircle size={16} strokeWidth={1.6} aria-hidden="true" />
+            <span>WhatsApp: {site.whatsapp}</span>
+          </a>
+          <a className="footer-contact-item email" href={`mailto:${site.email}`}>
+            <Mail size={16} strokeWidth={1.6} aria-hidden="true" />
+            <span>{site.email}</span>
           </a>
         </div>
       </div>

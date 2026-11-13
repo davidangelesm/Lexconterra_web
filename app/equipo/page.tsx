@@ -3,7 +3,7 @@ import { team } from "@/data/site";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Nuestro Equipo Profesional | LEXCONTERRA GROUP",
-  "Conozca a los cinco profesionales de LEXCONTERRA GROUP y sus áreas de práctica jurídica y contable.",
+  "Conozca a los seis profesionales de LEXCONTERRA GROUP y sus áreas de práctica jurídica, contable y de gestión.",
   "/equipo",
 );
 export default function Equipo() {
