@@ -183,7 +183,6 @@ export function TeamCard({ person }: { person: Professional }) {
             alt={person.name}
             fill
             sizes="(max-width: 760px) 100vw, 33vw"
-            style={{ objectFit: "cover", objectPosition: "top center" }}
           />
         ) : (
           <>

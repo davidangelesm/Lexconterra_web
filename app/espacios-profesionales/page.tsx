@@ -27,7 +27,6 @@ export default function Espacios() {
           <div>
             <p className="large-copy">{spacesIntro.description}</p>
             <p>{spacesIntro.extraDescription}</p>
-            <br />
           </div>
         </div>
         <div className="spaces-grid">

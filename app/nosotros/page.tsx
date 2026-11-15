@@ -93,7 +93,6 @@ export default function Nosotros() {
             <article key={v}>
               <span>0{i + 1}</span>
               <h3>{v}</h3>
-              <br/>
               <p>{d}</p>
             </article>
           ))}
