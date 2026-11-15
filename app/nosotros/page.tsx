@@ -19,9 +19,9 @@ export default function Nosotros() {
           <h2>
             Una práctica profesional
             <br />
-             basada en el conocimiento 
-             <br />
-             y a la confianza.
+            basada en el conocimiento
+            <br />
+            y la confianza.
           </h2>
         </div>
         <div>

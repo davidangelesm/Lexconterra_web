@@ -123,6 +123,17 @@ blockquote {
   text-wrap: pretty;
 }
 
+p,
+li {
+  text-align: justify;
+}
+
+.eyebrow,
+.contact-card .contact-value,
+.footer .footer-grid .footer-contact .footer-contact-item {
+  text-align: start;
+}
+
 p + p {
   margin-block-start: 1.25rem;
 }
