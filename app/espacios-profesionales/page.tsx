@@ -1,5 +1,5 @@
 import { PageHero, OfficeImage, Button, TextLink } from "@/components/ui";
-import { spaces, whatsappUrl } from "@/data/site";
+import { spaces, spacesIntro, whatsappUrl } from "@/data/site";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Espacios Profesionales | LEXCONTERRA GROUP",
@@ -12,23 +12,23 @@ export default function Espacios() {
       <PageHero
         eyebrow="Espacios profesionales"
         title="Espacios profesionales"
-        description="Ambientes profesionales para reuniones y actividades de trabajo."
+        description="Oficinas privadas, salas de reuniones y módulos de trabajo en Santa Beatriz, Lima."
       />
       <section className="section container">
-        <div className="section-heading">
+        <div className="intro-grid spaces-intro">
           <div>
-            <p className="eyebrow">SERVICIOS COMPLEMENTARIOS</p>
+            <p className="eyebrow">{spacesIntro.eyebrow}</p>
             <h2>
-              Un espacio para su
+              Un espacio profesional
               <br />
-              actividad profesional.
+              cuando lo necesita.
             </h2>
           </div>
-          <p className="narrow">
-            Además de nuestra asesoría jurídica, puede consultar por espacios de
-            trabajo en nuestra sede. Nuestro equipo le informará sobre las
-            opciones disponibles.
-          </p>
+          <div>
+            <p className="large-copy">{spacesIntro.description}</p>
+            <p>{spacesIntro.extraDescription}</p>
+            <br />
+          </div>
         </div>
         <div className="spaces-grid">
           {spaces.map((s) => (
@@ -45,7 +45,7 @@ export default function Espacios() {
                     `Buenos días, quisiera recibir información sobre ${s.title.toLowerCase()} de LEXCONTERRA GROUP.`,
                   )}
                 >
-                  Consultar este espacio
+                  {s.cta}
                 </TextLink>
               </div>
             </article>
@@ -53,10 +53,9 @@ export default function Espacios() {
         </div>
         <div className="availability">
           <div>
-            <h2>Conozca las opciones disponibles</h2>
+            <h2>Encuentre el espacio adecuado para su actividad</h2>
             <p>
-              Consulte con nuestro equipo las condiciones aplicables antes de
-              coordinar el uso de un espacio.
+              Consulte nuestras tarifas, horarios y condiciones de uso. Nuestro equipo le ayudará a identificar el ambiente que mejor se adapte a sus necesidades.
             </p>
           </div>
           <Button
@@ -64,7 +63,7 @@ export default function Espacios() {
               "Buenos días, quisiera recibir información sobre los espacios profesionales de LEXCONTERRA GROUP.",
             )}
           >
-            Consultar disponibilidad
+            Consultar disponibilidad y tarifas
           </Button>
         </div>
       </section>

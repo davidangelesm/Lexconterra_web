@@ -150,11 +150,14 @@ export function PracticeCard({
       <Heading>{practice.title}</Heading>
       <p>{practice.description}</p>
       {detailed && (
-        <ul>
-          {practice.services.map((s) => (
-            <li key={s}>{s}</li>
-          ))}
-        </ul>
+        <>
+          <p className="eyebrow services-label">Principales servicios:</p>
+          <ul>
+            {practice.services.map((s) => (
+              <li key={s}>{s}</li>
+            ))}
+          </ul>
+        </>
       )}
       <TextLink
         href={
@@ -165,7 +168,7 @@ export function PracticeCard({
             : "/areas-de-practica"
         }
       >
-        {detailed ? "Solicitar información" : "Conocer el área"}
+        {detailed ? `Consultar sobre ${practice.title}` : "Conocer el área"}
       </TextLink>
     </article>
   );

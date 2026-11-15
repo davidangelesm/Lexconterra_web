@@ -10,7 +10,7 @@ export const site = {
 export const whatsappUrl = (
   message = "Buenos días, quisiera solicitar información sobre los servicios jurídicos de LEXCONTERRA GROUP.",
 ) => `https://wa.me/51990290588?text=${encodeURIComponent(message)}`;
-export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address)}`;
+export const mapsUrl = "https://maps.app.goo.gl/n7e7WrYEG9399DHT9";
 export const navigation = [
   ["Inicio", "/"],
   ["Nosotros", "/nosotros"],
@@ -26,87 +26,112 @@ export const practices = [
     slug: "civil",
     title: "Derecho Civil",
     description:
-      "Protegemos los derechos e intereses de las personas, ofreciendo orientación y respaldo jurídico frente a situaciones que afectan sus relaciones personales y patrimoniales.",
+      "Brindamos asesoramiento y defensa jurídica en asuntos que afectan los derechos personales, las relaciones contractuales y el patrimonio. Nuestro objetivo es prevenir conflictos, proteger sus intereses y encontrar soluciones legales frente a controversias entre particulares.",
     services: [
-      "Contratos y obligaciones",
-      "Derechos reales",
-      "Responsabilidad y procesos civiles",
+      "Elaboración, revisión y resolución de contratos.",
+      "Conflictos sobre propiedad, posesión y derechos inmobiliarios.",
+      "Arrendamientos, desalojos y recuperación de inmuebles.",
+      "Cobranza de deudas e incumplimiento de obligaciones.",
+      "Sucesiones, herencias y peticiones de herencia.",
+      "Responsabilidad civil, indemnizaciones y procesos judiciales.",
     ],
   },
   {
     slug: "registral",
     title: "Derecho Registral",
     description:
-      "Contribuimos a brindar seguridad jurídica a la propiedad y al patrimonio, facilitando su formalización y la solución de dificultades registrales.",
+      "Ofrecemos asesoría especializada para regularizar, proteger y formalizar la propiedad inmobiliaria y otros derechos susceptibles de inscripción. Atendemos dificultades registrales y procedimientos ante la SUNARP, buscando brindar seguridad jurídica a su patrimonio y facilitar sus operaciones inmobiliarias.",
     services: [
-      "Saneamiento de propiedades",
-      "Inscripción de títulos",
-      "Procedimientos ante SUNARP",
+      "Saneamiento físico-legal de predios urbanos y rurales.",
+      "Independización, acumulación y subdivisión de inmuebles.",
+      "Rectificación de áreas, linderos y medidas perimétricas.",
+      "Inscripción de declaratorias de fábrica y reglamentos internos.",
+      "Inscripción y regularización de títulos y derechos registrales.",
+      "Subsanación de observaciones, apelaciones y procedimientos ante SUNARP.",
     ],
   },
   {
     slug: "empresarial",
     title: "Derecho Empresarial y Societario",
     description:
-      "Acompañamos el desarrollo de los negocios, aportando respaldo jurídico para tomar decisiones, fortalecer sus operaciones y afrontar los desafíos empresariales.",
+      "Acompañamos a emprendedores, empresarios y sociedades en la organización, desarrollo y protección de sus actividades comerciales. Brindamos respaldo jurídico para adoptar decisiones empresariales, fortalecer las relaciones comerciales y prevenir conflictos que puedan afectar la continuidad de sus negocios.",
     services: [
-      "Organización societaria",
-      "Contratos comerciales",
-      "Prevención de contingencias",
+      "Constitución de empresas y formalización de negocios.",
+      "Elaboración y modificación de estatutos y acuerdos societarios.",
+      "Elaboración, revisión y negociación de contratos comerciales.",
+      "Aumentos de capital, transformación y reorganización de sociedades.",
+      "Asesoramiento en juntas de accionistas, directorios y poderes.",
+      "Prevención y solución de conflictos entre socios y empresas.",
     ],
   },
   {
     slug: "laboral",
     title: "Derecho Laboral",
     description:
-      "Promovemos relaciones laborales jurídicamente seguras, brindando orientación y defensa a empleadores y trabajadores frente a situaciones de conflicto.",
+      "Brindamos asesoramiento a empleadores y trabajadores para proteger sus derechos y promover relaciones laborales adecuadas. Intervenimos en la prevención y solución de controversias, procurando alternativas legales que permitan afrontar los conflictos laborales con seguridad y respaldo profesional.",
     services: [
-      "Asesoramiento preventivo",
-      "Cumplimiento laboral",
-      "Controversias laborales",
+      "Elaboración y revisión de contratos de trabajo.",
+      "Asesoramiento sobre remuneraciones y beneficios sociales.",
+      "Defensa en casos de despido y reclamaciones laborales.",
+      "Patrocinio en conciliaciones y procesos judiciales laborales.",
+      "Asesoramiento durante inspecciones y procedimientos ante SUNAFIL.",
+      "Prevención de contingencias y cumplimiento de obligaciones laborales.",
     ],
   },
   {
     slug: "administrativo",
     title: "Derecho Administrativo",
     description:
-      "Procedimientos administrativos, recursos y representación ante entidades de la administración pública.",
+      "Asesoramos a personas y empresas en sus relaciones con las entidades de la Administración Pública. Brindamos orientación y defensa frente a decisiones administrativas, procedimientos y sanciones, procurando el respeto de sus derechos y el cumplimiento de las disposiciones legales.",
     services: [
-      "Procedimientos administrativos",
-      "Recursos administrativos",
-      "Representación ante entidades públicas",
+      "Asesoramiento en procedimientos ante entidades públicas.",
+      "Tramitación de licencias, autorizaciones y permisos administrativos.",
+      "Interposición de recursos de reconsideración y apelación.",
+      "Defensa frente a multas y procedimientos administrativos sancionadores.",
+      "Asesoramiento en contrataciones y controversias con el Estado.",
+      "Patrocinio en procesos judiciales contencioso-administrativos.",
     ],
   },
   {
     slug: "tributario",
-    title: "Derecho Tributario y Contable",
+    title: "Derecho Tributario y Asesoría Contable",
     description:
-      "Integramos conocimientos jurídicos y contables para favorecer una gestión económica responsable, prevenir contingencias y fortalecer la estabilidad empresarial.",
+      "Ofrecemos asesoramiento jurídico-tributario y servicios contables orientados al adecuado cumplimiento de las obligaciones fiscales y empresariales. Ayudamos a prevenir contingencias, atender requerimientos de la Administración Tributaria y mantener una gestión contable organizada y conforme a la normativa vigente.",
     services: [
-      "Asesoría tributaria",
-      "Obligaciones fiscales",
-      "Orientación contable empresarial",
+      "Asesoramiento tributario para personas naturales y empresas.",
+      "Declaración y cumplimiento de obligaciones tributarias.",
+      "Atención de fiscalizaciones y requerimientos de SUNAT.",
+      "Reclamaciones, apelaciones y procedimientos tributarios.",
+      "Servicios de contabilidad empresarial y elaboración de estados financieros.",
+      "Planeamiento tributario y prevención de contingencias fiscales.",
     ],
   },
   {
     slug: "penal",
     title: "Derecho Penal",
     description:
-      "Brindamos asesoramiento y defensa jurídica ante situaciones de naturaleza penal, velando por el respeto de los derechos y garantías de nuestros patrocinados.",
+      "Brindamos asesoramiento y defensa jurídica a personas involucradas en investigaciones o procesos penales, tanto en calidad de investigados como de agraviados. Desarrollamos estrategias de defensa respetando las garantías procesales y procurando la protección de los derechos de nuestros patrocinados.",
     services: [
-      "Asesoramiento penal",
-      "Defensa en investigaciones",
-      "Defensa en procesos penales",
+      "Defensa en investigaciones fiscales y procesos penales.",
+      "Patrocinio de víctimas, presentación de denuncias y reclamación de reparación civil.",
+      "Defensa en delitos patrimoniales: robo, hurto, estafa y apropiación ilícita.",
+      "Asesoramiento en delitos contra la Administración Pública y corrupción de funcionarios.",
+      "Defensa en delitos económicos, financieros y lavado de activos.",
+      "Asistencia en diligencias, audiencias, juicios y recursos penales.",
     ],
   },
   {
     slug: "constitucional",
     title: "Derecho Constitucional",
     description:
-      "Protección de derechos fundamentales y procesos constitucionales.",
+      "Brindamos asesoramiento y defensa para la protección de los derechos fundamentales frente a actos u omisiones que puedan vulnerarlos. Evaluamos los mecanismos constitucionales aplicables a cada situación, procurando restablecer los derechos afectados mediante las vías legales correspondientes.",
     services: [
-      "Orientación sobre derechos fundamentales",
-      "Procesos constitucionales",
+      "Procesos de amparo para la protección de derechos fundamentales.",
+      "Procesos de hábeas corpus en defensa de la libertad personal y derechos conexos.",
+      "Procesos de hábeas data y protección de datos personales.",
+      "Procesos de cumplimiento frente a mandatos legales o administrativos exigibles.",
+      "Medidas cautelares y recursos en procesos constitucionales.",
+      "Defensa frente a vulneraciones de derechos por autoridades o particulares.",
     ],
   },
 ];
@@ -183,11 +208,20 @@ export const team: Professional[] = [
     registration: null,
   },
 ];
+export const spacesIntro = {
+  eyebrow: "SERVICIOS COMPLEMENTARIOS",
+  title: "Un espacio profesional cuando lo necesita.",
+  description:
+    "En LEXCONTERRA GROUP ponemos a su disposición ambientes equipados para desarrollar actividades profesionales, atender clientes, realizar reuniones y participar en audiencias virtuales.",
+  extraDescription:
+    "Ofrecemos alternativas flexibles por horas o jornadas, en un entorno corporativo que combina privacidad, comodidad y funcionalidad, sin necesidad de asumir el compromiso de una oficina permanente.",
+};
 export const spaces = [
   {
     title: "Oficinas privadas",
     description:
-      "Un espacio para desarrollar sus actividades profesionales. Consulte las opciones y condiciones disponibles.",
+      "Ambientes independientes y equipados, ideales para profesionales que requieren privacidad, concentración y un espacio adecuado para atender clientes, desarrollar sus actividades o participar en reuniones virtuales.",
+    cta: "Consultar disponibilidad de oficinas",
     office: 1,
     image: "/images/Foto_oficinas_privadas.png",
     rates: null,
@@ -197,7 +231,8 @@ export const spaces = [
   {
     title: "Salas de reuniones",
     description:
-      "Ambientes para encuentros profesionales y reuniones de trabajo. Consulte la disponibilidad para su actividad.",
+      "Espacios acondicionados para reuniones profesionales, presentaciones, coordinaciones de trabajo y audiencias virtuales, con mobiliario apropiado y recursos tecnológicos que facilitan el desarrollo de sus actividades.",
+    cta: "Consultar disponibilidad de salas",
     office: 2,
     image: "/images/Foto_sala_de_reuniones.png",
     rates: null,
@@ -207,7 +242,8 @@ export const spaces = [
   {
     title: "Módulos de trabajo",
     description:
-      "Espacios para sus actividades de trabajo. Contáctenos para conocer las alternativas y condiciones de uso.",
+      "Estaciones individuales de trabajo destinadas a profesionales que necesitan un ambiente funcional para desarrollar sus actividades, realizar gestiones o trabajar de manera independiente, por períodos determinados.",
+    cta: "Consultar disponibilidad de módulos",
     office: 3,
     image: "/images/Foto_Modulos_trabajo.png",
     rates: null,

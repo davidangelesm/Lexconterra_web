@@ -12,18 +12,18 @@ export default function Instalaciones() {
       <PageHero
         eyebrow="Instalaciones"
         title="Nuestras instalaciones"
-        description="Un entorno profesional diseñado para la atención de nuestros clientes."
+        description="Espacios que reflejan profesionalismo, confianza y atención personalizada."
       />
       <section className="section container">
         <div className="intro-grid">
           <h2>
-            Un lugar para escuchar
-            <br />y trabajar en su consulta.
+            Un entorno adecuado
+            <br />para cada encuentro
           </h2>
           <p>
-            Nuestra sede en Santa Beatriz acoge la atención de nuestros clientes
-            y las reuniones profesionales. Conozca los ambientes de LEXCONTERRA
-            GROUP a través de esta galería.
+            LEXCONTERRA GROUP se encuentra ubicado en el edificio Cedral, en Santa Beatriz, Lima, un entorno corporativo que cuenta con recepción y control de ingreso.
+            <br /><br />
+            Nuestra sede dispone de oficinas privadas y sala de reuniones, con ambientes acondicionados para brindar una atención profesional, cómoda y reservada a nuestros clientes.
           </p>
         </div>
         <div className="gallery">
@@ -32,7 +32,7 @@ export default function Instalaciones() {
           ))}
         </div>
         <div className="section-heading">
-          <p>Encuentre la dirección de nuestra sede y planifique su visita.</p>
+          <p>Encuentre nuestra dirección y planifique su visita.</p>
           <Button href="/ubicacion">Ver nuestra ubicación</Button>
         </div>
       </section>

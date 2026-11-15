@@ -13,16 +13,15 @@ export default function Ubicacion() {
       <PageHero
         eyebrow="Ubicación"
         title="Dónde encontrarnos"
-        description="Nuestra sede en Santa Beatriz, Lima."
+        description="Nuestra sede en Santa Beatriz, Cercado de Lima."
       />
       <section className="section container">
         <div className="location-grid">
           <div>
             <p className="eyebrow">VISITE NUESTRA SEDE</p>
             <h2>
-              Estamos cerca de
-              <br />
-              su próxima decisión.
+              Estamos a su alcance
+              
             </h2>
             <p className="contact-line">
               <MapPin />

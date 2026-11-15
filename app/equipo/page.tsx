@@ -12,7 +12,7 @@ export default function Equipo() {
       <PageHero
         eyebrow="Equipo"
         title="Nuestro equipo profesional"
-        description="Experiencia especializada y compromiso con la atención jurídica."
+        description="Conozca a los profesionales y colaboradores que aportan experiencia, especialización y compromiso a la labor jurídica, empresarial y contable de LEXCONTERRA GROUP."
       />
       <section className="section container">
         <div className="team-grid">

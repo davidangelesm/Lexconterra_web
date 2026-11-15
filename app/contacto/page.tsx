@@ -15,28 +15,28 @@ export default function Contacto() {
       title: "Consultar por WhatsApp",
       detail: site.whatsapp,
       href: whatsappUrl(),
-      note: "Inicie una conversación con nuestro equipo.",
+      note: "Comuníquese con nosotros para solicitar información o coordinar una consulta.",
     },
     {
       icon: Phone,
       title: "Llamar a la oficina",
       detail: site.phone,
       href: "tel:+5119005261",
-      note: "Conversemos sobre su consulta.",
+      note: "Contáctenos telefónicamente para realizar consultas y coordinar su atención.",
     },
     {
       icon: Mail,
       title: "Enviar correo electrónico",
       detail: site.email,
       href: `mailto:${site.email}`,
-      note: "Escríbanos para solicitar información.",
+      note: "Escríbanos para solicitar información o realizar coordinaciones profesionales.",
     },
     {
       icon: MapPin,
       title: "Ver ubicación",
       detail: site.address,
       href: "/ubicacion",
-      note: "Encuentre nuestra sede en Lima.",
+      note: "Conozca nuestra ubicación y coordine su visita.",
     },
   ];
   return (
@@ -44,15 +44,14 @@ export default function Contacto() {
       <PageHero
         eyebrow="Contacto"
         title="Contáctenos"
-        description="Nuestro equipo está disponible para recibir sus consultas y brindar información sobre nuestros servicios jurídicos y empresariales."
+        description="Estamos a su disposición para atender sus consultas y brindarle información sobre nuestros servicios jurídicos, empresariales y contables."
       />
       <section className="section container">
         <div className="contact-intro">
-          <p className="eyebrow">EL PRIMER PASO ES CONVERSAR</p>
-          <h2>¿Cómo podemos ayudarle?</h2>
+          <p className="eyebrow">ESTAMOS PARA ATENDERLE</p>
+          <h2>¿En qué podemos ayudarle?</h2>
           <p>
-            Elija el canal de contacto que prefiera para comunicarse
-            directamente con nosotros.
+            Cada consulta merece una atención adecuada. Comuníquese con nuestro equipo a través del canal de su preferencia y permítanos conocer sus necesidades.
           </p>
         </div>
         <div className="contact-grid">
