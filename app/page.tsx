@@ -71,8 +71,8 @@ export default function Home() {
             Distintas especialidades. Una misma visión.
           </p>
           <p>
-            Somos un equipo de profesionales del ámbito juridico y contable que integra conocimientos
-            y experiencia para brindar una asesoría multidisciplinaria. Nuetra fortaleza radica en la
+            Somos un equipo de profesionales del ámbito jurídico y contable que integra conocimientos
+            y experiencia para brindar una asesoría multidisciplinaria. Nuestra fortaleza radica en la
             complementariedad de nuestras especialidades, lo que nos permite abordar cada asunto con una
             perspectiva integral y ofrecer soluciones adaptadas a las necesidades de personas y empresas.
           </p>
@@ -105,7 +105,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">NUESTRO EQUIPO</p>
           <h2>
-            La experiencia detras
+            La experiencia detrás
             <br />
             de cada asesoría.
           </h2>
