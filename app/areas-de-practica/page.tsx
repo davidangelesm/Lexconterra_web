@@ -10,9 +10,9 @@ export default function Areas() {
   return (
     <>
       <PageHero
-        eyebrow="Áreas de práctica"
+        eyebrow="Servicios Jurídicos"
         title="Nuestras áreas de práctica"
-        description="Asesoría jurídica especializada para personas y empresas."
+        description="Cada asunto requiere una respuesta jurídica especializada."
       />
       <section className="section container">
         <div className="section-heading">
@@ -21,7 +21,7 @@ export default function Areas() {
             integral.
           </p>
           <p className="muted narrow">
-            Seleccione un área para consultar directamente con nuestro equipo.
+            Explore nuestras especialidades y contacte directamente con nuestro equipo profesional.          
           </p>
         </div>
         <div className="practice-grid detailed-grid">
