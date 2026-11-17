@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <section className="home-hero">
         <div className="hero-copy">
-          <p className="eyebrow">CRITERIO JURÍDICO. VISIÓN EMPRESARIAL.</p>
+          <p className="eyebrow">CRITERIO JURÍDICO ° VISIÓN EMPRESARIAL</p>
           <h1>
             Soluciones jurídicas con <em>enfoque estratégico</em>
           </h1>
@@ -95,8 +95,43 @@ export default function Home() {
             </TextLink>
           </div>
           <div className="practice-grid">
-            {[0, 1, 2, 3, 6, 5].map((i) => (
-              <PracticeCard key={practices[i].slug} practice={practices[i]} />
+            {[
+              {
+                index: 0,
+                description:
+                  "Protegemos los derechos e intereses de las personas, ofreciendo orientación y respaldo jurídico frente a situaciones que afectan sus relaciones personales y patrimoniales.",
+              },
+              {
+                index: 1,
+                description:
+                  "Contribuimos a brindar seguridad jurídica a la propiedad y al patrimonio, facilitando su formalización y la solución de dificultades registrales.",
+              },
+              {
+                index: 2,
+                description:
+                  "Acompañamos el desarrollo de los negocios, aportando respaldo jurídico para tomar decisiones, fortalecer sus operaciones y afrontar los desafíos empresariales.",
+              },
+              {
+                index: 3,
+                description:
+                  "Promovemos relaciones laborales jurídicamente seguras, brindando orientación y defensa a empleadores y trabajadores frente a situaciones de conflicto.",
+              },
+              {
+                index: 6,
+                description:
+                  "Brindamos asesoramiento y defensa jurídica ante situaciones de naturaleza penal, velando por el respeto de los derechos y garantías de nuestros patrocinados.",
+              },
+              {
+                index: 5,
+                description:
+                  "Integramos conocimientos jurídicos y contables para favorecer una gestión económica responsable, prevenir contingencias y fortalecer la estabilidad empresarial.",
+              },
+            ].map(({ index, description }) => (
+              <PracticeCard
+                key={practices[index].slug}
+                practice={practices[index]}
+                description={description}
+              />
             ))}
           </div>
         </div>

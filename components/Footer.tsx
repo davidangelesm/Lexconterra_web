@@ -10,6 +10,10 @@ export function Footer() {
           <Link href="/" aria-label="LEXCONTERRA GROUP — Inicio">
             <Brand />
           </Link>
+          <br />
+          <h2>
+            Asesoría legal, empresarial y contable <br />
+          </h2>
           <p>
             Asesoría especializada para personas y empresas, con enfoque estratégico y compromiso profesional.
           </p>

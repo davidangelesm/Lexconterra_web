@@ -14,14 +14,15 @@ export default function Areas() {
         title="Nuestras áreas de práctica"
         description="Cada asunto requiere una respuesta jurídica especializada."
       />
-      <section className="section container">
+      <section className="section container areas-section">
         <div className="section-heading">
           <p className="large-copy narrow">
-            La especialización que su consulta necesita, con una perspectiva
-            integral.
+            Brindamos asesoramiento y defensa jurídica a personas y empresas, abordando cada situación de acuerdo con sus particularidades y necesidades.
           </p>
-          <p className="muted narrow">
-            Explore nuestras especialidades y contacte directamente con nuestro equipo profesional.          
+          <p className="lead narrow">
+            <strong>
+              Explore nuestras especialidades y contacte directamente con nuestro equipo profesional.
+            </strong>
           </p>
         </div>
         <div className="practice-grid detailed-grid">

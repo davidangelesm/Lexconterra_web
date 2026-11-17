@@ -175,6 +175,10 @@ button {
   padding-block: clamp(4rem, 6vw, 6.25rem);
 }
 
+.section.areas-section {
+  padding-block-start: 1.5rem;
+}
+
 .ivory {
   background: var(--ivory);
   border-block: 1px solid var(--line);
@@ -676,6 +680,12 @@ button {
   margin-block-end: 2.75rem;
 }
 
+.section-heading .lead {
+  max-width: 28ch;
+  margin-block-start: 0;
+  align-self: flex-start;
+}
+
 /* Practice Cards */
 .practice-grid {
   display: grid;
@@ -850,8 +860,8 @@ button {
 }
 
 .cta-inner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
   gap: 2rem;
 }
@@ -861,11 +871,18 @@ button {
   font-size: clamp(1.85rem, 1.35rem + 1.5vw, 2.65rem);
 }
 
+.cta-copy {
+  margin: 1.25rem  0.75rem;
+  padding-inline-start: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .cta .eyebrow {
   color: var(--gold);
 }
 
 .cta .button {
+  justify-self: end;
   background: var(--gold);
   color: var(--deep);
   border-color: var(--gold);
@@ -901,6 +918,10 @@ button {
 }
 
 .footer .original-logo {
+  display: block;
+  width: 260px;
+  height: 90px;
+  margin-block-start: -0.65rem;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
 }
 
@@ -1705,8 +1726,14 @@ button {
     grid-template-columns: 1fr;
   }
   .cta-inner {
-    align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .cta-copy {
+    padding-inline-start: 0;
+  }
+  .cta .button {
+    justify-self: start;
   }
   .footer-bottom {
     flex-direction: column;
