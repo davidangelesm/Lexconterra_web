@@ -164,7 +164,7 @@ export const team: Professional[] = [
     registration: null,
   },
   {
-    name: "Mg. Luis Miguel Guillén Rivera",
+    name: "Mg. Luis Guillén Rivera",
     role: "Contador Público Asociado",
     initials: "LG",
     areas: ["Auditoría Forense", "Peritaje Contable", "Asesoría Tributaria"],
@@ -173,7 +173,7 @@ export const team: Professional[] = [
     registration: null,
   },
   {
-    name: "Mg. Christian Salomón García Angulo",
+    name: "Mg. Christian García Angulo",
     role: "Abogado Asociado Externo",
     initials: "CG",
     areas: ["Derecho Penal"],
@@ -182,7 +182,7 @@ export const team: Professional[] = [
     registration: null,
   },
   {
-    name: "Mg. Francisco Antonio Condeña Carrasco",
+    name: "Mg. Francisco Condeña Carrasco",
     role: "Abogado Asociado Externo",
     initials: "FC",
     areas: [

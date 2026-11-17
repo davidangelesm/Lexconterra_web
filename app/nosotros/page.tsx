@@ -11,7 +11,7 @@ export default function Nosotros() {
       <PageHero
         eyebrow="Nosotros"
         title="Sobre LEXCONTERRA GROUP"
-        description="Criterio profesional, atención cercana y una visión integral del Derecho."
+        description="Conocimiento jurídico y contable al servicio de personas y empresas."
       />
       <section className="section container intro-grid">
         <div>
@@ -26,14 +26,14 @@ export default function Nosotros() {
         </div>
         <div>
           <p className="large-copy">
-            LEXCONTERRA GROUP reúne a profesionales de distintas especialidades 
+            LEXCONTERRA GROUP reúne a profesionales de distintas especialidades
             jurídicas y contables, cuya experiencia y conocimientos complementarios
             permiten abordar los asuntos de nuestros clientes desde una perspectiva multidisciplinaria.
           </p>
           <p>
-            Nuestra labor se caracteriza por el estudio cuidadoso de cada caso, 
-            la evaluación de alternativas y la formulación de estrategias debidamente 
-            fundamentadas. Buscamos ofrecer un acompañamiento profesional responsable, 
+            Nuestra labor se caracteriza por el estudio cuidadoso de cada caso,
+            la evaluación de alternativas y la formulación de estrategias debidamente
+            fundamentadas. Buscamos ofrecer un acompañamiento profesional responsable,
             con comunicación clara y soluciones acordes con las particularidades de cada situación.
           </p>
         </div>
@@ -44,29 +44,29 @@ export default function Nosotros() {
             <p className="eyebrow">01 / NUESTRO PROPÓSITO</p>
             <h2>Nuestra misión</h2>
             <p>
-              Brindar asesoría y defensa jurídica, así como servicios de asesoramiento 
-              empresarial y contable, con ética, rigor técnico y enfoque estratégico. 
-              Acompañamos a personas y empresas en la toma de decisiones, la prevención 
-              de contingencias y la solución de conflictos, ofreciendo alternativas fundamentadas 
+              Brindar asesoría y defensa jurídica, así como servicios de asesoramiento
+              empresarial y contable, con ética, rigor técnico y enfoque estratégico.
+              Acompañamos a personas y empresas en la toma de decisiones, la prevención
+              de contingencias y la solución de conflictos, ofreciendo alternativas fundamentadas
               que contribuyan a proteger sus derechos e intereses.
             </p>
           </article>
           <article>
-            <p className="eyebrow">02 / NUESTRA DIRECCIÓN</p>
+            <p className="eyebrow">02 / NUESTRO HORIZONTE</p>
             <h2>Nuestra visión</h2>
             <p>
-              Consolidarnos como un estudio de referencia en el Perú, reconocido por 
-              la excelencia profesional, la confianza de nuestros clientes y la 
-              capacidad de integrar distintas especialidades jurídicas, empresariales 
-              y contables, ofreciendo soluciones innovadoras y eficientes frente a 
+              Consolidarnos como un estudio de referencia en el Perú, reconocido por
+              la excelencia profesional, la confianza de nuestros clientes y la
+              capacidad de integrar distintas especialidades jurídicas, empresariales
+              y contables, ofreciendo soluciones innovadoras y eficientes frente a
               los desafíos de un entorno en constante evolución.
             </p>
           </article>
         </div>
       </section>
       <section className="section container">
-        <p className="eyebrow">LO QUE NOS GUÍA</p>
-        <h2>Nuestros valores</h2>
+        <p className="eyebrow">NUESTRA IDENTIDAD</p>
+        <h2>Principios que guían nuestra labor</h2>
         <div className="values">
           {[
             [

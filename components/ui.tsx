@@ -138,9 +138,11 @@ const icons = [
 export function PracticeCard({
   practice,
   detailed = false,
+  description,
 }: {
   practice: (typeof practices)[number];
   detailed?: boolean;
+  description?: string;
 }) {
   const Icon = icons[practices.indexOf(practice)] || Scale;
   const Heading = detailed ? "h2" : "h3";
@@ -148,7 +150,7 @@ export function PracticeCard({
     <article className={`practice-card ${detailed ? "detailed" : ""}`}>
       <Icon size={29} strokeWidth={1.3} />
       <Heading>{practice.title}</Heading>
-      <p>{practice.description}</p>
+      <p>{description ?? practice.description}</p>
       {detailed && (
         <>
           <p className="eyebrow services-label">Principales servicios:</p>
@@ -219,6 +221,9 @@ export function CallToAction() {
             atención profesional.
           </h2>
         </div>
+        <p className="cta-copy">
+          Estamos a su disposición para conocer sus necesidades y orientarle hacia la solución jurídica o empresarial más adecuada.
+        </p>
         <Button href="/contacto">Solicitar una consulta</Button>
       </div>
     </section>
