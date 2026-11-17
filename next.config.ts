@@ -7,6 +7,9 @@ const localIps = Object.values(networkInterfaces())
   .map((iface) => iface!.address);
 
 const nextConfig: NextConfig = {
+  experimental: {
+    agentUpgrade: "security",
+  },
   // Permite cargar y ejecutar los scripts de hidratación al acceder desde dispositivos en la red local (LAN).
   allowedDevOrigins: [
     "192.168.*.*",
