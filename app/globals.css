@@ -22,14 +22,11 @@
   --line-strong: #bcc8d0;
   --page-gutter: clamp(2rem, 4vw, 6rem);
   --shadow-sm:
-    0 1px 3px rgba(7, 25, 21, 0.05),
-    0 4px 12px rgba(7, 25, 21, 0.04);
+    0 1px 3px rgba(7, 25, 21, 0.05), 0 4px 12px rgba(7, 25, 21, 0.04);
   --shadow-md:
-    0 4px 12px rgba(7, 25, 21, 0.06),
-    0 16px 36px rgba(7, 25, 21, 0.08);
+    0 4px 12px rgba(7, 25, 21, 0.06), 0 16px 36px rgba(7, 25, 21, 0.08);
   --shadow-lg:
-    0 8px 24px rgba(7, 25, 21, 0.08),
-    0 24px 52px rgba(7, 25, 21, 0.14);
+    0 8px 24px rgba(7, 25, 21, 0.08), 0 24px 52px rgba(7, 25, 21, 0.14);
 }
 
 html,
@@ -872,7 +869,7 @@ button {
 }
 
 .cta-copy {
-  margin: 1.25rem  0.75rem;
+  margin: 1.25rem 0.75rem;
   padding-inline-start: 2rem;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -1689,10 +1686,13 @@ button {
   }
   .hero-visual {
     margin: 0 1.25rem 1.5rem;
-    min-block-size: 24rem;
+    min-block-size: 28rem;
   }
   .hero-visual > .office-image {
-    min-block-size: 24rem;
+    min-block-size: 28rem;
+  }
+  .hero-visual > .office-image img {
+    object-position: 50% 68%;
   }
   .principles > .container {
     display: grid;
