@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: { default: site.name, template: "%s" },
   description: "Asesoría legal, empresarial y contable en Lima, Perú.",
+  icons: {
+    icon: "/images/favicon-lexconterra.png",
+    shortcut: "/images/favicon-lexconterra.png",
+    apple: "/images/favicon-lexconterra.png",
+  },
 };
 export default function RootLayout({
   children,
